@@ -3,6 +3,8 @@
 A responsive React CRUD application to manage marketing campaigns.  
 Users can create, view, edit, and delete campaigns. The app includes localStorage-based persistence and a simulated campaign budget (balance).
 
+🔗 [Live Preview](https://campaign-manager-app.netlify.app/)
+
 ## 🚀 Features
 
 - ✅ Create new campaigns with:
