@@ -1,0 +1,58 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 2rem;
+    color: $text-dark;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        @include respond-to(mobile-medium){
+            font-size: 1.4rem;
+        }
+      }
+  
+    &__label {
+        font-family: $font-primary;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+        display: inline-block;
+
+        @include respond-to(mobile-medium){
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+      }
+
+      &__submit {
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        background-color: $bg-blue;
+        color: $text-light;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    
+        &:hover {
+          background-color: darken($bg-blue, 10%);
+        }
+      }
+  
+    .MuiInput-root,
+    .MuiSelect-root,
+    .MuiSwitch-root {
+      width: 100%;
+    }
+  
+    @media (min-width: 768px) {
+      padding: 3rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+  

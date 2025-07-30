@@ -1,0 +1,123 @@
+.campaign{
+    margin: 4rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: $font-primary;
+
+    @include respond-to(tablet){
+        margin: 2.5rem 3rem;
+    }
+
+    @include respond-to(mobile-medium){
+        margin: 2.5rem 2rem;
+    }
+
+    &-card{
+        padding: 2rem 2.5rem;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        box-sizing: border-box;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
+        @include respond-to(mobile-medium){
+            padding: 1.5rem 2rem;
+        }
+
+        &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+        }
+      
+
+        &__header{
+            color: #152348;
+            display: flex;
+            align-items: center;
+        }
+
+        &__status {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-left: 0.8rem;
+            margin-bottom: 1rem;
+          
+            &.online {
+              background-color: $accent-green; 
+            }
+          
+            &.offline {
+              background-color: $accent-red; 
+            }
+          }
+
+
+        &__title {
+            font-size: 1.8rem;            
+            font-weight: 700;
+            padding-bottom: 1rem;
+
+            @include respond-to(mobile-medium){
+                font-size: 1.4rem;
+            }
+        }
+
+          .tag {
+            display: inline-block;
+            background-color: $accent-blue;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 7px;
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+            margin-top: 0.4rem;
+            margin-bottom: 1rem;
+
+            @include respond-to(mobile-medium){
+                font-size: 1.2rem;
+            }
+          }
+
+          &__details {
+            p {
+              padding: 0.5rem 0;
+              font-size: 1.3rem;
+
+              @include respond-to(mobile-medium){
+                font-size: 1.1rem;
+            }
+
+              strong {
+                font-weight: 800;
+              }
+
+            }
+          }
+
+          &__actions {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+
+            .action-btn {
+              background: none;
+              border: none;
+              font-size: 1rem;
+              cursor: pointer;
+              color: #aaa;
+        
+              &:hover {
+                color: #a81212;
+              }
+            }  
+        }
+    }
+
+}

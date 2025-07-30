@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4.5rem;
+    background-color: $bg-light;
+    color: $text-dark;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+
+    @include respond-to(tablet){
+        padding: 1.5rem 3rem;
+    }
+    @include respond-to(mobile-medium){
+        padding: 1.5rem 2rem;
+    }
+  
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: rgb(7, 9, 53);
+
+
+      @include respond-to(mobile-medium) {
+        font-size: 1.8rem;
+      }
+
+      @include respond-to(mobile-small) {
+        font-size: 1.4rem;
+      }
+    }
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    &__link {
+      background-color: $bg-blue;
+      padding:  0.8rem 1.3rem;
+      border-radius: 7px;
+      color: $text-light;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-family: $font-primary;
+      transition: transform 0.2 ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  
+    &__balance {
+      font-size: 1.3rem;
+      color: $text-dark;
+      font-family: $font-primary;
+
+      @include respond-to (mobile-medium) {
+        order: -1; 
+        margin-left: auto;
+      }
+    }
+}

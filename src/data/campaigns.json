@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Q1 Product Launch",
+    "keywords": [
+      "marketing",
+      "launch"
+    ],
+    "bid": 100,
+    "fund": 500,
+    "status": "on",
+    "town": [
+      "Krakow"
+    ],
+    "radius": 15
+  },
+  {
+    "id": 2,
+    "name": "Summer Sale",
+    "keywords": [
+      "sale",
+      "summer"
+    ],
+    "bid": 50,
+    "fund": 300,
+    "status": "off",
+    "town": [
+      "Warsaw"
+    ],
+    "radius": 10
+  }
+]

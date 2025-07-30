@@ -1,12 +1,36 @@
-# React + Vite
+# 📣 Campaign Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React CRUD application to manage marketing campaigns.  
+Users can create, view, edit, and delete campaigns. The app includes localStorage-based persistence and a simulated campaign budget (balance).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Create new campaigns with:
+  - Name
+  - Keywords
+  - Bid amount
+  - Campaign fund
+  - Status (on/off)
+  - Town & radius
+- ✅ View all campaigns in a styled card layout
+- ✅ Edit or delete campaigns
+- ✅ Dynamic balance update
+- ✅ Responsive design (mobile & desktop)
+- ✅ LocalStorage persistence
+- ✅ Built with **React**, **React Router**, **Joy UI**, and **SCSS**
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/campaign-manager.git
+
+# Navigate into the project
+cd campaign-manager
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
