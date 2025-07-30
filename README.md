@@ -23,7 +23,7 @@ Users can create, view, edit, and delete campaigns. The app includes localStorag
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/campaign-manager.git
+git clone https://github.com/juliaszczepanek/campaign-app.git
 
 # Navigate into the project
 cd campaign-manager
